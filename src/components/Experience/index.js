@@ -1,28 +1,32 @@
 /* eslint-disable global-require */
-import { useEffect, useRef } from 'react';
-import { NumberedHeading } from '@common/styles';
-import Image from 'next/image';
-import { skills } from '@config';
+import React, { useState, useEffect, useRef } from 'react';
+
 import { srConfig } from '@config/sr';
-import { StyledAboutSection, StyledText, StyledPic } from './styles';
+import { skills } from '@config';
+import { experiences } from '@config';
+import { NumberedHeading } from '@common/styles';
+import { StyledContactSection, StyledText } from './style';
 
-
-const About = () => {
+const Experience = () => {
   const revealContainer = useRef(null);
-
+  const [selectedExperience, setSelectedExperience] = useState(null);
   useEffect(() => {
     const ScrollReveal = require('scrollreveal');
     const sr = ScrollReveal.default();
     sr.reveal(revealContainer.current, srConfig());
   }, []);
 
+
+  const handleExperienceClick = (index) => {
+    setSelectedExperience(index === selectedExperience ? null : index);
+  };
+
   return (
-    <StyledAboutSection id="about" ref={revealContainer}>
-      <NumberedHeading>Sobre Mi</NumberedHeading>
+    <StyledContactSection id="experiencie" ref={revealContainer}>
+      <NumberedHeading>Mi Experiencia</NumberedHeading>
       <div className="inner">
-        
-         <StyledText>
-          <p>
+        <StyledText>
+          {/* <p>
             Durante mi carrera, he tenido el privilegio de trabajar en proyectos emocionantes y desafiantes que han contribuido al avance de la industria tecnológica. Mi enfoque se centra en crear soluciones innovadoras y escalables que abordan las necesidades específicas de mis clientes y usuarios.
 
             Mi conocimiento profundo de Python y PHP me ha permitido liderar el desarrollo de proyectos de gran envergadura, donde he demostrado mi capacidad para resolver problemas complejos de manera efectiva y eficiente.
@@ -35,23 +39,28 @@ const About = () => {
 
             Soy un apasionado de la programación y estoy comprometido con la excelencia en todo lo que hago. Mi objetivo es seguir desafiándome a mí mismo y superando las expectativas en cada proyecto en el que participo.
 
-          </p>
+          </p> */}
+          <div>
+            {experiences &&
+              experiences.map((experience, index) => (
+                <div key={index} onClick={() => handleExperienceClick(index)}>
+                  <strong>{experience.name}</strong>
+                  {selectedExperience === index && <div>{experience.description}</div>}
+                </div>
+              ))}
+          </div>
 
-        
 
-          <ul className="skills-list">
-            {skills && skills.map((skill) => <li key={skill}>{skill}</li>)}
-          </ul>
         </StyledText>
 
-        <StyledPic>
-          <div className="wrapper">
-            <Image width={300} height={400} blu src="/avatar.jpg" alt="Avatar" className="img" />
-          </div>
-        </StyledPic>
       </div>
-    </StyledAboutSection>
+
+
+
+
+
+    </StyledContactSection>
   );
 };
 
-export default About;
+export default Experience;

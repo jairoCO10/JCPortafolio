@@ -1,4 +1,5 @@
 /* eslint-disable max-len */
+
 import featuredProjects from './featured';
 import projects from './projects';
 
@@ -8,6 +9,10 @@ module.exports = {
   featuredProjects,
   projects,
   skills: ['Python', 'Docker', 'SQL', 'PHP', 'GraphQL'],
+  experiences: [
+    { name: 'Sipremcol', description: 'hola mundo' },
+    { name: 'Geomastic', description: 'hola mundo' }
+  ],
   socialMedia: [
     {
       name: 'GitHub',
@@ -34,7 +39,7 @@ module.exports = {
     },
     // {
     //   name: 'Blog',
-    //   url: 'https://blog.jrgarciadev.com',
+    //   url: '',
     // },
     {
       name: 'Work',
@@ -45,8 +50,12 @@ module.exports = {
       url: '/#contact',
     },
     {
+      name: 'Experiencie',
+      url: '/#experiencie',
+    },
+    {
       name: 'Resumen',
-      url: '/#resumen',
+      url: '/resumen.pdf',
     },
   ],
   colors: {

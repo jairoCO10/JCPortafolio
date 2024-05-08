@@ -21,7 +21,7 @@ export const StyledText = styled.div`
 
   ul.skills-list {
     display: grid;
-    grid-template-columns: repeat(3, minmax(140px, 200px));
+    grid-template-columns: repeat(3, minmax(180px, 20px));
     padding: 0;
     margin: 20px 0 0 0;
     overflow: hidden;
@@ -40,10 +40,10 @@ export const StyledText = styled.div`
 
       color: ${(props) => props.theme.text.accent};
       &:before {
-        content: '▹';
+        content: '▹▹▹';
         position: absolute;
-        top: 5px;
-        left: 0;
+        top: 3px;
+        left: -10px;
         color: ${(props) => props.theme.brand.primary};
         font-size: ${(props) => props.theme.fontSize.sm};
         line-height: 12px;

@@ -1,5 +1,6 @@
 import styled from 'styled-components';
-import { Hero, About, Featured, Projects, Contact } from '@components';
+import { Hero, About, Featured, Projects, Contact, Experience } from '@components';
+// import {  } from '../components';
 
 const StyledMainContainer = styled.section`
   width: 100%;
@@ -15,6 +16,7 @@ const IndexPage = () => (
   <StyledMainContainer className="fillHeight">
     <Hero />
     <About />
+    <Experience />
     <Featured />
     <Projects />
     <Contact />

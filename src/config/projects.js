@@ -17,4 +17,12 @@ module.exports = [
       'Web application to show modern slider, the slider images are managament from Strapi CMS Panel',
     techs: ['Java'],
   },
+  {
+    title: 'Scanner Qr',
+    external: '#',
+    github: 'https://github.com/jairoCO10/cedula-escaner',
+    descriptionHtml:
+      'Web application to show modern slider, the slider images are managament from Strapi CMS Panel',
+    techs: ['Java'],
+  },
 ];

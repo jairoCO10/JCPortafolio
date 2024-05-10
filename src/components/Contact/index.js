@@ -18,7 +18,8 @@ const Contact = () => {
     <StyledContactSection id="contact" ref={revealContainer}>
       <NumberedHeading overline>Contactame</NumberedHeading>
       <p>
-        Si actualmente estoy explorando nuevas oportunidades y estoy abierto a nuevas posibilidades.
+        Actualmente estoy explorando nuevas oportunidades y estoy abierto a nuevas posibilidades
+        como desarrollador Backend.
       </p>
 
       <a className="email-link" href={`mailto:${email}`}>

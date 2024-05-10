@@ -29,22 +29,22 @@ const BaseLayout = ({ children }) => {
           content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
         />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:site" content="@jrgarciadev" />
+        <meta name="twitter:site" content="@" />
         <meta property="og:site_name" content="Jairo Cogollo | Backend Developer" />
         <meta property="og:type" content="website" />
         <meta property="og:title" content="Jairo Cogollo | Backend Developer" />
         <meta property="og:locale" content="en" />
-        <meta property="og:url" content="https://jrgarciadev.com" />
+        {/* <meta property="og:url" content="https://jrgarciadev.com" /> */}
         <meta
           name="description"
-          content="Hello! I'm Junior, a Software Developer based in Buenos Aires, Argentina. I enjoy creating beautiful and reliable applications for internet and phones. My goal is to always build scalable products and performant experiences."
+          content="Hello! I'm enginner of system, a Software Developer based in Colombia. I enjoy creating beautiful and reliable api's for robustas. My goal is to always build scalable products and performant experiences."
         />
         <meta
           name="keywords"
           content="Developer, Python Developer, Freelancer, Docker, PHP, Laravel Developer, FastApi Developer, Django Developer"
         />
-        <meta property="og:image" content="https://jrgarciadev.com/avatar.jpeg" />
-        <meta property="twitter:image" content="https://jrgarciadev.com/avatar.jpeg" />
+        <meta property="og:image" content="/avatar.jpg" />
+        {/* <meta property="twitter:image" content="https://jrgarciadev.com/avatar.jpeg" /> */}
       </Head>
       {children}
     </div>

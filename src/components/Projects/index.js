@@ -45,7 +45,7 @@ const Projects = () => {
       <TransitionGroup className="projects-grid">
         {projectsToShow &&
           projectsToShow.map((project, i) => {
-            const { title, github, external, techs } = project;
+            const { title, descriptionHtml, github, external, techs } = project;
 
             return (
               <CSSTransition
@@ -88,6 +88,11 @@ const Projects = () => {
                       </div>
 
                       <h3 className="project-title">{title}</h3>
+
+                      <div
+                        className="project-description"
+                        dangerouslySetInnerHTML={{ __html: descriptionHtml }}
+                      />
                     </header>
 
                     <footer>

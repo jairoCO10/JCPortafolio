@@ -1,4 +1,5 @@
 /* eslint-disable global-require */
+
 import { useEffect, useRef } from 'react';
 import { email } from '@config';
 import { srConfig } from '@config/sr';
@@ -17,10 +18,7 @@ const Contact = () => {
     <StyledContactSection id="contact" ref={revealContainer}>
       <NumberedHeading overline>Contactame</NumberedHeading>
       <p>
-        Actualmente estoy explorando nuevas oportunidades y estoy abierto a nuevas posibilidades.
-        Si tienes alguna pregunta o simplemente quieres saludar, estaré encantado de escucharte y responder lo mejor que pueda.
-        <br></br>
-        ¡Gracias por tu interés y espero tener la oportunidad de conectar contigo
+        Si actualmente estoy explorando nuevas oportunidades y estoy abierto a nuevas posibilidades.
       </p>
 
       <a className="email-link" href={`mailto:${email}`}>

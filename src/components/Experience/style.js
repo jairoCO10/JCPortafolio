@@ -45,7 +45,6 @@ export const StyledText = styled.div`
       padding-left: 20px;
       font-family: ${(props) => props.theme.fontFamily.fontMono};
       font-size: ${(props) => props.theme.fontSize.sm};
-
       color: ${(props) => props.theme.text.accent};
       &:before {
         content: '▹';

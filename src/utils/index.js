@@ -23,7 +23,6 @@ export const tint = (hex, amount) => {
 
     return `#${RR}${GG}${BB}`;
   } catch (error) {
-    console.error(error.message);
     return '';
   }
 };
@@ -39,7 +38,6 @@ export const hexa = (hex, alpha) => {
     }
     return `rgb(${r}, ${g}, ${b})`;
   } catch (error) {
-    console.log(error.message);
     return '';
   }
 };

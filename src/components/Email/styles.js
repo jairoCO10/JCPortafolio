@@ -1,21 +1,14 @@
 import styled from 'styled-components';
 
-// brand: {
-//   primary: '#00FF00',
-//   secondary: '#00FF00',
-//   accent: '#5FC921',
-// },
-
 export const StyledLinkWrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
   position: relative;
-
   a {
     margin: 20px auto;
     padding: 10px;
-    color: #00FF00;
+    color: #00ff00; // Corregido
     font-family: ${(props) => props.theme.fontFamily.mono};
     font-size: ${(props) => props.theme.fontSize.xs};
     letter-spacing: 0.1em;
@@ -27,7 +20,7 @@ export const StyledLinkWrapper = styled.div`
       transform: translateY(-3px);
     }
   }
-  span{
+  span {
     margin: 20px auto;
     padding: 10px;
     font-family: ${(props) => props.theme.fontFamily.mono};

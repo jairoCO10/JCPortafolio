@@ -15,15 +15,12 @@ const Hero = () => {
 
   const one = <StyledBigTitle2>Hola Me llamo</StyledBigTitle2>;
   const two = <StyledBigTitle>Jairo Cogollo Otero</StyledBigTitle>;
-  const three = <StyledBigTitle slate>Soy Desarrollador Backend Python y Especialista En Seguridad Informatica </StyledBigTitle>;
-  const four = (
-    <p>
-       Soy un desarrollador apasionado en el desarrollo de api robustas y escables
-        <br></br>
-      
-      </p>
-
+  const three = (
+    <StyledBigTitle slate>
+      Soy Desarrollador Backend Python y Especialista En Seguridad Informatica
+    </StyledBigTitle>
   );
+  const four = <p>Soy un desarrollador apasionado en el desarrollo de api robustas y escables</p>;
   const five = (
     <a href={`mailto:${email}`} className="email-link">
       Contactame

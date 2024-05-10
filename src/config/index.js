@@ -11,7 +11,7 @@ module.exports = {
   skills: ['Python', 'Docker', 'SQL', 'PHP', 'GraphQL'],
   experiences: [
     { name: 'Sipremcol', description: 'hola mundo' },
-    { name: 'Geomastic', description: 'hola mundo' }
+    { name: 'Geomastic', description: 'hola mundo' },
   ],
   socialMedia: [
     {
